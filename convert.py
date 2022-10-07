@@ -1,3 +1,4 @@
+'''
 number_as_string = input("Enter a decimal number:")
 #number_as_string = input("tere")
 
@@ -13,4 +14,19 @@ while number > 0:
     result = str(remainder) + result
     number = number // 2
 
+
+
 print("Result in binary:", result)
+'''
+binary_as_string = input("Enter a binary number:")
+
+binary_count = len(binary_as_string)
+number = int(binary_as_string)
+decimal_number = 0
+pow_value = 0
+while(binary_count > 0):
+    print(binary_as_string[binary_count-1])
+    decimal_number += pow(2, pow_value) * int(binary_as_string[binary_count-1])
+    binary_count -= 1
+    pow_value += 1
+print(decimal_number)
