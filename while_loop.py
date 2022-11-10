@@ -75,4 +75,3 @@ def ask_user_age(age_limit: int) -> int:
             print("Too old!")
         else:
             return int(age)
-
